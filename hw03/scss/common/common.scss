@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.btn-main{
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  padding: 28px 104px;
+  cursor: pointer;
+}
+.btn-reset{
+  color: $color_btn-bg;
+  background-color: $color_input;
+  border-color: $color_input;;
+}
+
+.btn-submit{
+  color:$color_white;
+  background-color: $color_black;
+}

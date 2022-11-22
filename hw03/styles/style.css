@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, menu, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.btn-main {
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  padding: 28px 104px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  color: #6D6D6D;
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: #000;
+}
+
+.data-form {
+  padding: 52px 10px 78px;
+  max-width: 852px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+.data-form__legend {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 56px 0;
+}
+.data-form__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 36px 0;
+}
+.form-field__label {
+  max-width: 200px;
+  margin: 0 0 14px 0;
+  cursor: pointer;
+}
+.form-field__input {
+  padding: 20px 16px;
+  border: 2px solid #6D6D6D;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+}
+.form-field :focus {
+  outline: none;
+}
+.form-field__title {
+  font-size: 24px;
+  margin: 0 0 32px 0;
+}
+.form-field__radio-label {
+  max-width: 100px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.form-field__radio-btn {
+  margin-right: 12px;
+}
+.form-field__textarea {
+  max-width: 100%;
+  padding: 20px 16px;
+  height: 100px;
+  resize: none;
+  border: 2px solid #6D6D6D;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+}
+.form-field__checkbox {
+  margin-right: 12px;
+}
+.form-field__policy {
+  margin-bottom: 48px;
+}
+
+/*# sourceMappingURL=style.css.map */

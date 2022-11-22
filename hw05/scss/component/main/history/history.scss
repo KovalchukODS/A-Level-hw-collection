@@ -1,0 +1,23 @@
+.history{
+  padding: 0 0 80px;
+  border-top: 1px solid $color_main;
+  border-bottom: 1px solid $color_main;
+  &__cards{
+    padding: 40px 0 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card{
+    display: flex;
+    align-items: center;
+    max-width: 498px;
+    height: 400px;
+    padding: 40px 40px 40px 30px;
+    background-color: $color_main;
+    border-left: 10px solid $color_yellow;
+    &__text{
+      color: $color_white;
+      font-size: 20px;
+    }
+  }
+}

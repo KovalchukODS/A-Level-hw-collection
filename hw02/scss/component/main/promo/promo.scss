@@ -1,0 +1,38 @@
+.promo {
+  margin-bottom: 150px;
+  &__wrapper{
+    padding: 40px 50px 52px;
+    background-color: $color_background;
+  };
+  // CARDS
+  &__cards{
+    margin-bottom: 85px;
+    width: 100%;
+    @extend %flex-rcba;
+    flex-wrap: wrap;
+  };
+  &__card-item{
+    background-color: $color_white;
+    border-radius: 10px;
+    max-width: 350px;
+    height: 300px;
+    &__text{
+      text-align: left;
+      padding: 20px 70px 20px 20px;
+    }
+  };
+  // CONTENT
+  &__content{
+    max-width: 600px;
+    text-align: left;
+    &__title{
+      font-size: 50px;
+      margin-bottom: 44px;
+      color: $color_white;
+    };
+    &__description{
+      margin-bottom: 100px;
+    }
+  }
+
+}

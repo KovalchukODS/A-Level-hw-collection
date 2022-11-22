@@ -1,0 +1,34 @@
+
+%flex-ccc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+};
+%flex-rcb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+};
+
+%flex-rcba {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+};
+
+%flex-ccr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+};
+
+%flex-rce {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+};

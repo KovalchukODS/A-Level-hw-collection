@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>HW</title>
+    <!-- <script src="/js/script.js" defer></script> -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="./images/Vector.svg"
+          alt="Company logo"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">gallery</a>
+          <a href="#" class="header__nav__link">history</a>
+          <a href="#" class="header__nav__link">contact us</a>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="gallery">
+          <section class="cards">
+            <ul class="cards__collection">
+              <li id="firstCard" class="cards__collection__item">
+                <img
+                  src="./images/image1.jpg"
+                  alt="card"
+                  class="cards__collection__item__card"
+                />
+              </li>
+              <li id="secondCard" class="cards__collection__item">
+                <img
+                  src="./images/image2.jpg"
+                  alt="card"
+                  class="cards__collection__item__card"
+                />
+              </li>
+              <li id="thirdCard" class="cards__collection__item">
+                <img
+                  src="./images/image3.jpg"
+                  alt="card"
+                  class="cards__collection__item__card"
+                />
+              </li>
+            </ul>
+            <div class="cards__switcher">
+              <div class="pointer p-first"></div>
+              <div class="pointer p-second"></div>
+              <div class="pointer p-third"></div>
+            </div>
+          </section>
+          <section class="gallery__hero">
+            <p class="gallery__hero__description">
+              We are an architectural firm with a long history and extensive
+              experience. Our intention is to help Ukrainians rebuild their
+              homes and buildings even better than they were before the war.
+            </p>
+            <p class="gallery__hero__description">
+              Please take a look at our history and contact us if you are
+              intrested. We would be really glad to join the help to Ukraine as
+              we can.
+            </p>
+            <p class="gallery__hero__description">Glory to Ukraine!</p>
+          </section>
+        </section>
+        <section class="history">
+          <h2 class="history__title title">history</h2>
+          <section class="history__cards">
+            <div class="history__card">
+              <p class="history__card__text">
+                <time>1890</time> Fusce rhoncus at sapien at sollicitudin.
+                Quisque semper sollicitudin libero eget placerat. Aliquam quis
+                laoreet tellus. In id congue lacus. Nulla vestibulum turpis et
+                nisi consequat, non sagittis purus interdum. Nunc eu dolor urna.
+                Quisque fermentum risus quam, at consectetur leo tincidunt id.
+                Nulla facilisi.
+              </p>
+            </div>
+            <div class="history__card">
+              <p class="history__card__text">
+                <time>1920</time>Aliquam erat volutpat. Curabitur et accumsan
+                odio, eget scelerisque risus. Suspendisse ultrices mattis
+                accumsan. In hac habitasse platea dictumst. In non nisl turpis.
+                Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt,
+                vel molestie neque commodo. Ut pellentesque ut ex pulvinar
+                aliquam. Morbi porttitor, felis quis convallis tincidunt, augue
+                felis euismod lectus, a placerat purus justo eget magna. Mauris
+                neque nisi, pharetra, vehicula non lorem.
+              </p>
+            </div>
+          </section>
+        </section>
+        <section class="contact-form">
+          <h2 class="contact-form__title title">contact us</h2>
+          <div class="contact-form__actions">
+            <input
+              name="cf_msg"
+              id="cfMsg"
+              class="contact-form__msg"
+              placeholder="type your message here"
+            />
+            <button class="contact-form__btn">send</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

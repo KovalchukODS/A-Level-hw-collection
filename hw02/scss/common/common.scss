@@ -1,0 +1,32 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.menu-link {
+  color: $color_black;
+  text-decoration: none;
+}
+.btn-main {
+  padding: 24px 50px;
+  color: $color_white;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  border:1px solid $color_btn;
+  border-radius: 10px;
+  background: $color_btn;
+}
+.btn-main:hover{
+  padding: 23px 49px;
+  color: $color_btn ;
+  background: #FFFFFF;
+  border: 2px solid $color_btn;
+  border-radius: 10px;
+}
+
+.focused-word {
+  color: $color_btn;
+}

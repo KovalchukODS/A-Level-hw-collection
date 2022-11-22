@@ -1,0 +1,13 @@
+@include laptop{
+  .header{
+    padding: 40px 0 80px;
+  }
+}
+
+@include mobile{
+  .header{
+    display: none;
+    height: 10vh;
+    background-color: $color_main;
+  }
+}

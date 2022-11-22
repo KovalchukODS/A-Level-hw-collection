@@ -1,0 +1,8 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #f5fcff;
+  background: url(../images/cloud.png) 0 50px/200px auto repeat-x fixed, url(../images/grass.png) bottom/auto 150px repeat-x fixed, url(../images/cat.png) bottom center/auto 500px no-repeat fixed, url(../images/sun.png) top right/168px 168px no-repeat fixed;
+}
+
+/*# sourceMappingURL=style.css.map */

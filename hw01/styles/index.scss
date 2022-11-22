@@ -1,0 +1,45 @@
+$color_main: #999;
+$color_white: #fff;
+$color_cssertively: #ccc;
+
+a {
+    text-decoration: none;
+};
+
+.text {
+    color: $color_main;
+};
+
+.box {
+    background: rgb(0, 0, 0);
+    .box-title {
+        color: $color_white;
+    };
+    a {
+        color: $color_white;
+    };
+    h2 {
+        color: $color_white;
+    };
+
+    .center{
+        text-align: center;
+        .bold{
+            font-weight: bold;
+        };
+        .primary{
+            color: $color_cssertively;
+        };
+        .secondary{
+            color: $color_white;
+        };
+    };
+};
+
+
+.sec-wrapper {
+    text-align: right;
+    h2 {
+        font-weight: normal;
+    }
+}

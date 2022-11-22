@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 03</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form method="post" class="data-form">
+      <legend class="data-form__legend">Please fill out the form below</legend>
+      <div class="form-field">
+        <label for="formName" class="form-field__label">Full name</label>
+        <input id="formName" class="form-field__input" type="text" />
+      </div>
+      <div class="form-field">
+        <label for="formEmail" class="form-field__label"
+          >Your e-mail address</label
+        >
+        <input id="formEmail" class="form-field__input" type="email" />
+      </div>
+      <div class="form-field">
+        <label for="formTel" class="form-field__label">Your phone number</label>
+        <input id="formTel" class="form-field__input" type="tel" />
+      </div>
+      <!-- SELECT -->
+      <div class="form-field">
+        <label for="selectCountry" class="form-field__label"
+          >Select your country</label
+        >
+        <select id="selectCountry" class="form-field__input">
+          <option value="UA" class="form-field__select__option">Ukraine</option>
+          <option value="GB" class="form-field__select__option">
+            United Kingdom
+          </option>
+          <option value="US" class="form-field__select__option">
+            United States
+          </option>
+          <option value="CA" class="form-field__select__option">Canada</option>
+          <option value="AU" class="form-field__select__option">
+            Australia
+          </option>
+          <option value="NZ" class="form-field__select__option">
+            New Zealand
+          </option>
+        </select>
+      </div>
+      <!-- RADIO -->
+      <div class="form-field">
+        <h3 class="form-field__title">I want to attend event</h3>
+        <label class="form-field__radio-label">
+          <input class="form-field__radio-btn" type="radio" name="eventType" />
+          <span>online</span>
+        </label>
+        <label class="form-field__radio-label">
+          <input class="form-field__radio-btn" type="radio" name="eventType" />
+          <span>offline</span>
+        </label>
+      </div>
+      <!-- TEXTAREA -->
+      <div class="form-field">
+        <label for="formComment" class="form-field__label">Comments</label>
+        <textarea id="formComment" class="form-field__textarea"> </textarea>
+      </div>
+      <div class="form-field__policy">
+        <input class="form-field__checkbox" type="checkbox" required />
+        <label class="form-field__label">I agree with the privacy policy</label>
+      </div>
+      <footer class="data-form__footer">
+        <button type="reset" class="btn-main btn-reset">Clear form</button>
+        <button type="submit" class="btn-main btn-submit">Submit form</button>
+      </footer>
+    </form>
+  </body>
+</html>

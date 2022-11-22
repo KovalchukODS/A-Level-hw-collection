@@ -1,0 +1,61 @@
+.data-form {
+  padding: 52px 10px 78px;
+  max-width: 852px;
+  margin: 20px 0 ;
+  border-radius: 8px;
+  &__legend{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 56px 0;
+  }
+  &__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 36px 0;
+  &__label{
+    max-width: 200px;
+    margin: 0 0 14px 0;
+    cursor: pointer;
+  }
+  &__input{
+    padding: 20px 16px;
+    border: 2px solid $color_btn-bg;
+    border-radius: 8px;
+    background-color: $color_input;
+  }:focus{
+    outline: none;
+  }
+  &__title{
+    font-size: 24px;
+    margin:0 0 32px 0; 
+  }
+  &__radio-label{
+    max-width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__radio-btn{
+    margin-right: 12px;
+  }
+  &__textarea{
+    max-width: 100% ;
+    padding: 20px 16px;
+    height: 100px;
+    resize: none;
+    border: 2px solid $color_btn-bg;
+    border-radius: 8px;
+    background-color: $color_input;
+  }
+  &__checkbox{
+    margin-right: 12px;
+  }
+  &__policy{
+    margin-bottom: 48px;
+  }
+}

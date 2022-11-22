@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+}
+
+.text {
+  color: #999;
+}
+
+.box {
+  background: rgb(0, 0, 0);
+}
+.box .box-title {
+  color: #fff;
+}
+.box a {
+  color: #fff;
+}
+.box h2 {
+  color: #fff;
+}
+.box .center {
+  text-align: center;
+}
+.box .center .bold {
+  font-weight: bold;
+}
+.box .center .primary {
+  color: #ccc;
+}
+.box .center .secondary {
+  color: #fff;
+}
+
+.sec-wrapper {
+  text-align: right;
+}
+.sec-wrapper h2 {
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,35 @@
+.gallery{
+  .cards{
+    &__collection{
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      &__item{
+        max-width: 400px;
+        &__card{
+          max-width: 400px;
+          object-fit: cover;
+        }
+      }
+
+    }
+    &__switcher {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 80px;
+      width: 90px;
+    }
+  }
+  &__hero{
+    margin: 0 auto;
+    padding:0 0 80px;
+    &__description{
+      margin: 0 0 40px;
+      font-size: 28px;
+      color: $color_main;
+    }
+  }
+}

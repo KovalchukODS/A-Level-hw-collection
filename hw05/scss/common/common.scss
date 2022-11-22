@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  scroll-behavior: smooth;
+  font: Montserrat regular sans-serif;
+}
+
+.container{
+  max-width: $breakpoint_xl;
+  margin: 0 auto;
+}
+
+.pointer{
+  width: 19px;
+  height: 19px;
+  border: 1px solid $color_main;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 6px $color_main;
+  }
+}
+.title {
+  max-width: 500px;
+  padding: 16px 0;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid $color_main;
+  text-align: center;
+  color: $color_main;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}

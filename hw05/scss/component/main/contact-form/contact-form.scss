@@ -1,0 +1,29 @@
+.contact-form{
+  padding: 0 0 160px;
+  &__actions{
+    position: relative;
+  }
+  &__msg{
+    width: 100%;
+    padding: 48px 208px 48px 30px;
+    border: 1px solid $color_main;
+    font-size: 18px;
+    color: $color_main;
+    resize: none;
+  }
+  &__btn{
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 40px;
+    padding: 13px 56px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $color_main;
+  }
+  &__btn:hover{
+    text-decoration: underline;
+  };
+}
