@@ -5,24 +5,21 @@
 body{
   margin: 0;
   scroll-behavior: smooth;
-  font: Montserrat regular sans-serif;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 .container{
-  max-width: $breakpoint_xl;
+  max-width: 1310px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-.pointer{
-  width: 19px;
-  height: 19px;
-  border: 1px solid $color_main;
-  border-radius: 50%;
-  cursor: pointer;
-  &:hover{
-    box-shadow: 0 0 6px $color_main;
-  }
-}
+ .wrapper{
+  max-width: $breakpoint_lg;
+  margin: 0 auto;
+ }
+
 .title {
   max-width: 500px;
   padding: 16px 0;
@@ -32,5 +29,47 @@ body{
   color: $color_main;
   text-transform: uppercase;
   font-size: 40px;
+  font-weight: 900;
   font-weight: bold;
 }
+
+.svg{
+  fill: $color_main;
+}
+
+time{
+  font-size: 48px;
+}
+
+@include laptop {
+  .container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  .title{
+    font-size: 30px;
+  }
+}
+
+@include mobile {
+  .container{
+    padding: 0;
+  }
+  .wrapper{
+    max-width: 335px;
+  }
+  .title{
+    font-size: 20px;
+    margin: 0 0 24px;
+  }
+  time{
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+

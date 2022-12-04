@@ -1,0 +1,31 @@
+@include laptop{
+  .contact-form{
+    padding-bottom:120px;
+    &__actions{
+      padding: 30px 40px;
+    }
+  }
+}
+
+@include mobile{
+  .contact-form{
+    &__actions{
+      padding: 0;
+      height: 230px;
+      border: none;
+      flex-direction: column;
+    }
+    &__msg{
+      margin: 0 0 20px;
+      padding: 20px;
+      width: 100%;
+      color:  $color_main;
+      border: 1px solid $color_main;
+      outline: none;
+      resize: none;
+    }
+    ::placeholder {
+      text-align: center;
+    }
+  }
+}

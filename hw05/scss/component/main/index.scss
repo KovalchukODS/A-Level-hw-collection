@@ -1,3 +1,16 @@
 @import "./gallery/";
+@import "./hero/";
 @import "./history/";
 @import "./contact-form/";
+
+@include laptop{
+  .main{
+    margin-top: 188px;
+  }
+}
+
+@include mobile{
+  .main{
+    margin-top: 0;
+  }
+}

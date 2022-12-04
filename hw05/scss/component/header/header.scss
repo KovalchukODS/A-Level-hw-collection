@@ -1,24 +1,35 @@
-.header{
-  padding: 80px 0;
+.burger-btn{
+  position: absolute;
+  z-index: 3;
+  display: none;
+  opacity: 0;
+}
+
+.burger-icon{
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.company-logo{
   text-align: center;
-  margin: 0 auto;
-  &__logo{
-    width: 68px;
-    margin-bottom: 80px;
-  }
+  margin: 80px 0;
+}
+
+.header{
+  width: 100%;
+  padding-bottom: 80px;
   &__nav{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
     &__link{
-      margin:0 80px 0 0;
       text-decoration: none;
       color: $color_main;
       font-size: 20px;
-    }
-    :hover{
-      text-decoration: underline;
-    }
-    :last-of-type{
-      margin: 0;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
-

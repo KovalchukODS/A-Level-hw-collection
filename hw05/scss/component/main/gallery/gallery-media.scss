@@ -1,0 +1,10 @@
+@include laptop {
+  .gallery{
+    margin:0 -20px;
+  }
+}
+@include mobile {
+    .slick-slide{
+      border: 0;
+    }
+}

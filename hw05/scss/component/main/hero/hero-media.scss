@@ -1,0 +1,19 @@
+@include laptop{
+  .hero{
+      &__text{
+        margin: 0 0 34px;
+        font-size: 24px;
+      }
+    
+  }
+}
+
+@include mobile{
+  .hero{
+    padding-bottom: 48px;
+      &__text{
+        margin: 0 0 22px;
+        font-size: 16px;
+      }
+  }
+}

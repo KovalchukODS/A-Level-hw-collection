@@ -1,29 +1,41 @@
 .contact-form{
-  padding: 0 0 160px;
+  padding-bottom:160px;
+  border-top: 1px solid $color_main;
   &__actions{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    border: 1px solid $color_main;
   }
   &__msg{
-    width: 100%;
-    padding: 48px 208px 48px 30px;
-    border: 1px solid $color_main;
+    flex: 1 1 0;
+    padding-right: 30px;
+    align-self: center;
     font-size: 18px;
-    color: $color_main;
+    height: 24px;
+    color:  $color_main;
+    border: none;
+    outline: none;
     resize: none;
   }
+  ::placeholder {
+    color: $color_main;
+    opacity: 0.5;
+    font-size: 18px;
+    border: none;
+  }
   &__btn{
-    position: absolute;
     display: block;
-    right: 30px;
-    top: 40px;
     padding: 13px 56px;
+    font-size: 28px;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    color: #fff;
+    color: $color_white;
     background-color: $color_main;
+    &:hover{
+      text-decoration: underline;
+    };
   }
-  &__btn:hover{
-    text-decoration: underline;
-  };
 }

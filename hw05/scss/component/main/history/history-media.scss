@@ -1,0 +1,20 @@
+@include laptop {
+  .history{
+    &__cards{
+      flex-direction: column;
+    }
+    &__card{
+      max-width: 100%;
+    }
+  }
+}
+
+@include mobile{
+  .history{
+    padding-bottom: 48px;
+    &__cards{
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}

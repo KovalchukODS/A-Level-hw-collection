@@ -1,13 +1,79 @@
 @include laptop{
+  .burger-btn{
+    top: 56px;
+    right: 60px;
+    display: block;
+  }
+  .company-logo{
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    top: 56px;
+    left: 60px;
+  }
+  .burger-icon{
+    display: block;
+    top: 56px;
+    right: 60px;
+  }
   .header{
-    padding: 40px 0 80px;
+    display: none;
+    &__nav{
+      gap: 48px;
+      margin: 228px 0 0 65px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__link{
+        color: white;
+      }
+    }
+  }
+
+
+  #burgerSwitcher:checked ~ .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 516px;
+    z-index: 2;
+    background-color: $color_main;
+    display: block;
+  }
+
+  #burgerSwitcher:checked ~ .company-logo > .svg {
+    fill: #ffffff;
   }
 }
 
+
+
 @include mobile{
-  .header{
+  .company-logo{
     display: none;
-    height: 10vh;
-    background-color: $color_main;
+    top: 24px;
+    left: 20px;
+  }
+
+  .burger-icon{
+    top: 24px;
+    right: 20px;
+  }
+
+  #burgerSwitcher:checked ~ .header{
+    height: 100vh;
+  }
+  #burgerSwitcher:checked ~ .company-logo{
+    display: block;
+  }
+
+  .header{
+    &__nav{
+      margin: 120px 0 0 20px;
+      &__link{
+        color: white;
+      }
+    }
   }
 }
