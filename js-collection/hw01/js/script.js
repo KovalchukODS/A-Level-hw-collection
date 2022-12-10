@@ -77,42 +77,26 @@ return totalStacksToPrepare;
 //////////////////////////////////
 
 // TASK 5
-
+(()=>{
 const medianNumber = 6;
 const symbolDash = "-";
 const symbolHash = "#";
-
+let padStart = medianNumber;
+let padEnd = medianNumber;
 let treeBasement = medianNumber + medianNumber - 1
 
-for(let i = 1; i <= 6; ++i){
-  let treeLine = "";
-  let startOfHash = medianNumber;
-  for( let k = 1; k < treeBasement; ++k){
-    if (k !== startOfHash) treeLine += symbolDash;
+for(let i = 1; i <= medianNumber; ++i){
 
+  let treeLine = "";
+
+  for( let k = 1; k <= treeBasement; k++){
+    if (k < padStart || k > padEnd) treeLine += symbolDash;
+    else treeLine += symbolHash;
   }
+
+  padStart--
+  padEnd++
+
   console.log(treeLine);
 };
-
-
-// -----#-----  //1
-// ----###----  //2
-// ---#####---  //3
-// --#######--  //4
-// -#########-  //5
-// ###########  //6 
-
-
-
-
-
-// for(let i = 0; i < 4 ; i++){
-//   let treeLine = ""
-//   for(let j =0 ; j < 4-i;j++ ){
-//       treeLine += "*";
-//   }
-//   for(let k = 0 ;k <i*2;k++){
-//       treeLine += "#";
-//   }
-//   console.log(treeLine);
-// }
+})();
