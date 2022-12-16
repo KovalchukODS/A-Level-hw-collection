@@ -1,4 +1,5 @@
 /////   TASK #1
+console.log("/////  TASK #1");
 
 (() => {
   const citiesAndCountries = {
@@ -21,6 +22,7 @@
 })();
 
 /////   TASK #2
+console.log("/////  TASK #2");
 
 (() => {
   function getArray() {
@@ -43,6 +45,7 @@
 })();
 
 /////   TASK #3
+console.log("/////  TASK #3");
 
 (() => {
   const namesOfDays = {
@@ -98,6 +101,7 @@
 })();
 
 /////   TASK #4
+console.log("/////  TASK #4");
 
 (() => {
   function getTwoLowestNum(arr) {
@@ -117,17 +121,17 @@
 })();
 
 /////   TASK #5
+console.log("/////  TASK #5");
 
 (() => {
   function valueConvertor(arr) {
     let result = 0;
     for (let i of arr) {
-      console.log(i, result);
       result = result * 2 + i;
-      console.log(result);
     }
-    console.log(result);
+    console.log(`Testing: [${arr}] ==> ${result}`);
+    return result;
   }
-  const arr = [1, 1, 1, 1, 1];
+  const arr = [1, 1, 1, 1, 1, 1, 1, 1];
   valueConvertor(arr);
 })();
