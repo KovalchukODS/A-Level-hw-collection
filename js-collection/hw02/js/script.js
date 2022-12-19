@@ -107,16 +107,14 @@ console.log("/////  TASK #4");
   function getTwoLowestNum(arr) {
     arr = Array.from(new Set(arr));
     if (arr.length < 4) return console.log("invalid length of array");
-    arr.sort((a, b) => a - b);
-    const leastNum = arr[0],
-      lessNum = arr[1];
-    const result = leastNum + lessNum;
+    arr = arr.filter((e) => e > 0 && Number.isInteger(e)).sort((a, b) => a - b);
+    const result = arr[0] + arr[1];
     console.log(
       `The summmary of 2 lowest unique numbers in array is: ${result}`
     );
     return result;
   }
-  const arr = [10, 3453000, 8010, 6, 2, 2, 234, 7589];
+  const arr = [10, 3453000, 8010, 6, 2, 2, 234, 7589, 1.2];
   getTwoLowestNum(arr);
 })();
 
