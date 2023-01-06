@@ -33,7 +33,7 @@
       name: "Денис",
       surname: "Хрущ",
       ratingPoint: 1000,
-      schoolPoint: 990,
+      schoolPoint: 0,
       course: 4,
     },
     {
@@ -87,22 +87,35 @@
       this.surname = options.surname;
       this.ratingPoint = options.ratingPoint;
       this.schoolPoint = options.schoolPoint;
-      this.isSelfPayment = null;
+      this.isSelfPayment = true;
+      Student.listOfStudents.push(this);
+      Student.paymentsCalc();
+      Student.budgetCalc();
     }
+
     static ID = 1;
     static listOfStudents = [];
     static listOfBudgetStudents = [];
 
-    static addStudent(student) {
-      Student.listOfStudents.push(new Student(student));
+    static paymentsCalc() {
+      const studentList = Student.listOfStudents;
+      studentList.sort((a, b) => {
+        if (b.ratingPoint > a.ratingPoint) return 1;
+        if (b.ratingPoint < a.ratingPoint) return -1;
+        if ((b.ratingPoint = a.ratingPoint)) {
+          if (b.schoolPoint > a.schoolPoint) return 1;
+          else return 0;
+        }
+      });
+      studentList.slice(0, 5).forEach((e) => (e.isSelfPayment = false));
+      studentList.slice(5).forEach((e) => (e.isSelfPayment = true));
     }
-    static addListOfStudents(students) {
-      for (let i of students) {
-        Student.listOfStudents.push(new Student(i));
-      }
+    static budgetCalc() {
+      Student.listOfBudgetStudents = Student.listOfStudents.slice(0, 5);
     }
   }
-  Student.addListOfStudents(studentArr);
+
+  for (const student of studentArr) new Student(student);
 
   console.log(Student.listOfBudgetStudents);
   console.log(Student.listOfStudents);

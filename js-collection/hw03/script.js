@@ -60,7 +60,8 @@ getFullNamesFromArr(employeeConstructArr);
 console.log("TASK 5");
 
 const getMiddleSalary = (arr) => {
-  const result = arr.reduce((acc, employee) => acc + employee.salary, 0);
+  const result =
+    arr.reduce((acc, employee) => acc + employee.salary, 0) / arr.length;
   console.log(result);
   return result;
 };
