@@ -1,4 +1,4 @@
-// TASK 3
+// TASK 1
 (() => {
   const studentArr = [
     {
@@ -33,7 +33,7 @@
       name: "Денис",
       surname: "Хрущ",
       ratingPoint: 1000,
-      schoolPoint: 0,
+      schoolPoint: 1000,
       course: 4,
     },
     {
@@ -87,7 +87,7 @@
       this.surname = options.surname;
       this.ratingPoint = options.ratingPoint;
       this.schoolPoint = options.schoolPoint;
-      this.isSelfPayment = true;
+      this.isSelfPayment = null;
       Student.listOfStudents.push(this);
       Student.paymentsCalc();
       Student.budgetCalc();
@@ -102,7 +102,7 @@
       studentList.sort((a, b) => {
         if (b.ratingPoint > a.ratingPoint) return 1;
         if (b.ratingPoint < a.ratingPoint) return -1;
-        if ((b.ratingPoint = a.ratingPoint)) {
+        if (b.ratingPoint === a.ratingPoint) {
           if (b.schoolPoint > a.schoolPoint) return 1;
           else return 0;
         }

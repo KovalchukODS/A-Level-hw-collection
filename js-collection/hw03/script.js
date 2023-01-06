@@ -1,14 +1,3 @@
-const gladValakas = {
-  id: 0,
-  name: "Valeriy",
-  surname: "Zhmishenko",
-  salary: 1000,
-  workExperience: 10,
-  isPrivileges: true,
-  gender: "male",
-};
-const employeeValera = new Employee(gladValakas);
-
 // Создать функцию - конструктор, которая будет иметь внутри все свойства обьекта emplyee из массива emplyeeArr;
 // const employeeObj = new Emploee(employee);
 
