@@ -110,9 +110,11 @@ class Candidate {
   ////////////// HW 07
   // 7.1
   static searchCandidatesByPhoneNumber(phoneNumbers) {
-    return Candidate.listOfCandidates.filter((e) =>
-      e.phone.includes(phoneNumbers)
-    );
+    return Candidate.listOfCandidates.filter((e) => {
+      const cadidatesPhoneNumber = e.phone.replaceAll(/\D/g, "");
+      phoneNumbers = phoneNumbers.replaceAll(/\D/g, "");
+      return cadidatesPhoneNumber.includes(phoneNumbers);
+    });
   }
   // 7.2
   static getCandidateById(candidateId) {
@@ -200,6 +202,8 @@ console.log(Candidate.getCondidatesByGender("male"));
 // 7.1  Создать поиск кандидатов в массиве  по номеру телефона. Номер телефона может быть указан не полностью и в любом формате.
 
 console.log(Candidate.searchCandidatesByPhoneNumber("43"));
+console.log(Candidate.searchCandidatesByPhoneNumber("+1(869) 40"));
+console.log(Candidate.searchCandidatesByPhoneNumber("+1(869)408-39-82"));
 
 // 7.2 Создать функию которая найдет кандидата по  _id и вернет его из массива candidatesArr c отформатированной датой регистрации (поле registred). Дата должна иметь формат DD/MM/YY.
 console.log(Candidate.getCandidateById("5e216bc9a6059760578aefa4"));
