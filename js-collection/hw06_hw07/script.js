@@ -112,8 +112,7 @@ class Candidate {
   static searchCandidatesByPhoneNumber(phoneNumbers) {
     return Candidate.listOfCandidates.filter((e) => {
       const cadidatesPhoneNumber = e.phone.replaceAll(/\D/g, "");
-      phoneNumbers = phoneNumbers.replaceAll(/\D/g, "");
-      return cadidatesPhoneNumber.includes(phoneNumbers);
+      return cadidatesPhoneNumber.includes(phoneNumbers.replaceAll(/\D/g, ""));
     });
   }
   // 7.2
