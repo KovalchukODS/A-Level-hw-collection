@@ -122,7 +122,10 @@ class Candidate {
     );
     candidate.registered = candidate.registered
       .slice(0, 10)
-      .replaceAll("-", "/");
+      .replaceAll("-", "/")
+      .split("/")
+      .reverse()
+      .join("/");
     return candidate;
   }
   // 7.3
