@@ -1,0 +1,38 @@
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+  text-indent: 20px;
+}
+
+input[type = 'file'] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+input::placeholder{
+  padding-left: 10px;
+}
+
+input[type='file'] +label {
+  background: #FFF;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+
+span {
+  color: #f15d22;
+}
